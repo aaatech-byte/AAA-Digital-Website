@@ -226,7 +226,7 @@ function FeaturedWork() {
 
   const filteredProjects = selectedCategory
     ? initialProjects.filter((project) => project.category === selectedCategory)
-    : initialProjects.slice(0, 3); // Only show 3 projects initially
+    : initialProjects.slice(0, 3);
 
   const handleViewAllClick = () => {
     navigate("/work");
@@ -248,14 +248,14 @@ function FeaturedWork() {
               </p>
             </div>
 
-            <div className="text-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-7xl">
+            <div className="text-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl">
               {categories.map((category) => (
                 <div
                   key={category}
                   className="bg-white rounded-2xl shadow-md p-4 text-gray-500 hover:text-emerald-500 hover:font-bold font-semibold translate-y-0 cursor-pointer hover:shadow-xl duration-150 transition scale-95"
                   onClick={() => handleCategoryClick(category)}
                 >
-                  <h2 className="text-base mt-2 ">{category}</h2>
+                  <h2 className="text-base ">{category}</h2>
                 </div>
               ))}
             </div>

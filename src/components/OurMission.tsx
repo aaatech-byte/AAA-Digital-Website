@@ -41,11 +41,11 @@ export default function App() {
         <div className="mx-auto max-w-7xl">
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-36">
             <div className="relative text-center z-30">
-              <h1 className="text-3xl font-bold text-emerald-600">
+              <h1 className="text-4xl font-bold text-emerald-600">
                 {heroData.title}
                 <span className="text-gray-900"> {heroData.subtitle}</span>
               </h1>
-              <p className="text-base font-semibold text-gray-600 my-5 pb-5 max-w-xl mx-auto">
+              <p className="text-lg font-semibold text-gray-600 my-5 pb-5 max-w-3xl mx-auto">
                 {heroData.missionStatement}
               </p>
             </div>
@@ -60,7 +60,7 @@ export default function App() {
                     //   background: feature.backgroundColor || 'white',
                     // }}
                   >
-                    <h3 className="text-xl font-semibold text-gray-700 mb-3">{feature.title}</h3>
+                    <h3 className="text-lg font-bold text-gray-700 mb-3">{feature.title}</h3>
                     <p className='text-gray-400 font-semibold'>{feature.description}</p>
                   </div>
                 ))}

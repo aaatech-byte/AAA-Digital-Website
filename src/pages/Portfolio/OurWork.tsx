@@ -2,9 +2,8 @@ import { useState, useEffect, useRef } from "react";
 
 import Testimonials from "../../components/Testimonials";
 import Stats from "../../components/Stats";
-import ContactForm from '../../components/ContactCTA';
-import OurMission from '../../components/OurMission'
-
+import ContactForm from "../../components/ContactCTA";
+import OurMission from "../../components/OurMission";
 
 const truncateDescription = (text: string, wordLimit: number) => {
   const words = text.split(" ");
@@ -245,17 +244,26 @@ export default function OurWork() {
   return (
     <main>
       <section className="relative h-[95vh] bg-white bg-[url('https://png.pngtree.com/thumb_back/fh260/background/20230801/pngtree-top-tips-to-make-money-blogging-image_12958761.jpg')] bg-center bg-cover">
-      <div className="absolute  bg-gray-100 w-[100%] h-[95vh] opacity-60"></div>
-        <div className= "relative z-40 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-22 md:py-20">
-          <div className="text-center">
-            <h1 className="mt-4 text-4xl md:text-6xl font-bold text-gray-800 mb-6">
+        <div className="absolute  bg-gray-100 w-[100%] h-[95vh] opacity-60"></div>
+        <div className="relative z-40 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-22 md:py-24 ">
+          <div className="text-center pt-44">
+            <h1 className="mt-4 text-3xl md:text-6xl font-bold text-gray-800 mb-6">
               Projects We've <span className="text-primary">Delivered</span>
             </h1>
-            <p className="text-lg text-gray-600 mb-8 max-w-4xl py-2 mx-auto">
+            <p className="text-lg text-gray-600 mb-8 max-w-xl py-2 mx-auto">
               Explore our recent projects to discover how we've empowered
               businesses to achieve their digital goals, enhance their online
               presence, and drive long-term growth.
             </p>
+            <Button
+              variant="primary"
+              size="md"
+              className="group"
+              onClick={() => handleNavigation("/contact")}
+            >
+              Let's Get Started
+              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+            </Button>
           </div>
         </div>
         <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
@@ -364,8 +372,8 @@ export default function OurWork() {
       )}
 
       <Testimonials />
-      <OurMission/>
-      <Stats/>
+      <OurMission />
+      <Stats />
       <ContactForm />
     </main>
   );
