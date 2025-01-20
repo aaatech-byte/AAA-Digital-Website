@@ -115,14 +115,14 @@ function Footer() {
             <h4 className="text-xl font-bold mb-4 text-gray-200">
               Contact
             </h4>
-            <div className="flex items-center text-gray-400 transition-transform transform hover:scale-105 hover:text-primary">
+            <div className="flex items-center cursor-pointer text-gray-400 transition-transform transform hover:scale-105 hover:text-primary">
               <EmailIcon
                 className="mr-2 cursor-pointer hover:text-primary "
                 onClick={() =>
                   (window.location.href = `mailto:${footerData.contactInfo.email}`)
                 }
               />
-              <span>{footerData.contactInfo.email}</span>
+              <span className="text-sm">{footerData.contactInfo.email}</span>
             </div>
 
             <div
@@ -132,9 +132,11 @@ function Footer() {
               }
             >
               <LocationOnIcon className="mr-2" />
-              <span>{footerData.address}</span>
+              <span className="text-sm">{footerData.address}</span>
             </div>
+
           </div>
+
         </div>
 
         <div className="mt-12 pt-8 border-t border-gray-800">

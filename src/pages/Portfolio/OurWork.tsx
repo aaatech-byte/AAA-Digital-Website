@@ -39,7 +39,7 @@ const projects = [
     description:
       "Kinetic Systems struggled with a static website that failed to attract leads and engage visitors effectively. The lack of dynamic content and interactive elements meant potential clients were not engaging with the brand, leading to low conversions and missed opportunities.",
     image:
-      "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80",
+      "https://media.istockphoto.com/id/1305999733/photo/web-design-desktop.jpg?s=612x612&w=0&k=20&c=mdGnzSrhUGijPuXHR3vA_hrQyshToudcJc8A50L0a9I=",
     features: [
       "Lead-generation forms",
       "Responsive design",
@@ -244,8 +244,9 @@ export default function OurWork() {
 
   return (
     <main>
-      <section className="relative bg-gradient-to-br from-gray-50 to-green-50 pt-10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-22 md:py-20">
+      <section className="relative h-[95vh] bg-white bg-[url('https://png.pngtree.com/thumb_back/fh260/background/20230801/pngtree-top-tips-to-make-money-blogging-image_12958761.jpg')] bg-center bg-cover">
+      <div className="absolute  bg-gray-100 w-[100%] h-[95vh] opacity-60"></div>
+        <div className= "relative z-40 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-22 md:py-20">
           <div className="text-center">
             <h1 className="mt-4 text-4xl md:text-6xl font-bold text-gray-800 mb-6">
               Projects We've <span className="text-primary">Delivered</span>

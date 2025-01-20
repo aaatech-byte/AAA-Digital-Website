@@ -183,7 +183,9 @@ export default function ServicesPage() {
 
   return (
     <main className="bg-white">
-      <section className="relative bg-gradient-to-br from-gray-50 to-green-50 pt-20">
+       <section className="relative h-[95vh] bg-white bg-[url('https://png.pngtree.com/thumb_back/fw800/background/20240328/pngtree-flat-lay-top-view-office-table-desk-image_15644935.jpg')] bg-center bg-cover">
+       <div className="absolute  bg-gray-100 w-[100%] h-[95vh] opacity-80"></div>
+      <section className="relative pt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-20">
           <div className="text-center">
             <span className="text-primary text-2xl font-bold tracking-wide uppercase">
@@ -212,8 +214,10 @@ export default function ServicesPage() {
             </Button>
           </div>
         </div>
-        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
+        {/* <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div> */}
       </section>
+      </section>
+
       <section id="services" className="py-10 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -254,6 +258,7 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
+      
 
       <FeaturedWork />
       <Stats />
