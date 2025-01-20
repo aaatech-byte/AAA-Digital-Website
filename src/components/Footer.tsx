@@ -3,146 +3,136 @@ import { useNavigate } from "react-router-dom";
 import EmailIcon from "@mui/icons-material/Email";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 
-export default function Footer() {
+function Footer() {
+  const footerData = {
+    logoSrc: "src/assets/images/logo-white.png",
+    description: "Revolutionizing your business with bold, innovative digital solutions that drive exponential growth, ignite operational efficiency, and unlock limitless potential—empowering you to thrive in an ever-evolving digital world.",
+    socialLinks: [
+      {
+        name: "Facebook",
+        url: "https://www.facebook.com/profile.php?id=61566395171281",
+        icon: <Facebook size={24} />,
+      },
+      {
+        name: "LinkedIn",
+        url: "https://www.linkedin.com/company/aaa-digital-marketing/posts/?feedView=all",
+        icon: <Linkedin size={24} />,
+      },
+    ],
+    services: [
+      { name: "Web Development", path: "/services/web-development" },
+      { name: "App Developoment", path: "/services/mobile-apps" },
+      { name: "Custom Software Development", path: "/services/custom-software" },
+      { name: "E-Commerce Solutions", path: "/services/ecommerce" },
+      { name: "Digital Marketing", path: "/services/digital-marketing" },
+      { name: "Social Media Marketing", path: "/services/social-marketing" },
+      { name: "Email Marketing", path: "/services/email-marketing" },
+      { name: "Video Marketing & Branding", path: "/services/video-marketing" },
+    ],
+    companyLinks: [
+      { name: "Portfolio", path: "/work" },
+      { name: "About", path: "/about" },
+      { name: "Blog", path: "/blog" },
+      { name: "Contact Us", path: "/contact" },
+    ],
+    contactInfo: {
+      email: "Business@aaa-digitalmarketing.com",
+      addressLink: "https://www.google.com/maps/place/Pennsylvania,+USA",
+    },
+    address: "Headquarter: Pennsylvania, USA",
+  };
+
   const navigate = useNavigate();
-  const handleNavigation = (path: string) => {
+  const handleNavigation = (path) => {
     navigate(path);
     window.scrollTo(0, 0);
   };
+
+  console.log(footerData);
+
   return (
     <footer className="bg-gray-900 text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            {/* <h3 className="text-2xl font-bold mb-4">AAA Digital</h3> */}
             <img
-              src="src/assets/images/logo-white.png"
-              className="mt-2 h-11 w-16
-                object-cover"
+              src={footerData.logoSrc}
+              alt="Logo"
+              className="mt-2 h-16 w-auto object-cover"
             />
-            <p className="text-gray-400 mt-2">
-              Transforming businesses through innovative digital solutions.
+            <p className="text-gray-200 sm:pr-6 tracking-wider  mt-8 text-sm">
+              {footerData.description}
             </p>
-            <div className="flex space-x-4 mt-6">
-              <a
-                href="https://www.facebook.com/profile.php?id=61566395171281"
-                className="text-gray-400 hover:text-primary transition"
-              >
-                <Facebook size={24} />
-              </a>
-              {/* <a href="#" className="text-gray-400 hover:text-primary transition">
-                <Twitter size={24} />
-              </a> */}
-              {/* <a
-                href="https://www.instagram.com/aaadigitalltd/"
-                className="text-gray-400 hover:text-primary transition"
-              >
-                <Instagram size={24} />
-              </a> */}
-              <a
-                href="https://www.linkedin.com/company/aaa-digital-marketing/posts/?feedView=all"
-                className="text-gray-400 hover:text-primary transition"
-              >
-                <Linkedin size={24} />
-              </a>
+            <div className="flex space-x-6 mt-6">
+              {footerData.socialLinks.map((link, index) => (
+                <a
+                  key={index}
+                  href={link.url}
+                  className="text-gray-400 hover:text-primary transition-transform transform hover:scale-110"
+                  aria-label={link.name}
+                >
+                  {link.icon}
+                </a>
+              ))}
             </div>
           </div>
 
           <div>
-            <h4 className="text-lg font-semibold mb-4">Services</h4>
+            <h4 className="text-xl font-bold mb-4 text-gray-200">
+              Services
+            </h4>
             <ul className="space-y-2">
-              <li>
-                <button
-                  onClick={() => handleNavigation("/services/web-development")}
-                  className="text-gray-400 hover:text-primary transition"
-                >
-                  Web Development
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() =>
-                    handleNavigation("/services/digital-marketing")
-                  }
-                  className="text-gray-400 hover:text-primary transition"
-                >
-                  Digital Marketing
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => handleNavigation("/services/ecommerce")}
-                  className="text-gray-400 hover:text-primary transition"
-                >
-                  E-Commerce
-                </button>
-              </li>
+              {footerData.services.map((service, index) => (
+                <li key={index}>
+                  <button
+                    onClick={() => handleNavigation(service.path)}
+                    className="text-gray-400 hover:text-primary transition duration-300 transform hover:translate-x-2"
+                  >
+                    {service.name}
+                  </button>
+                </li>
+              ))}
             </ul>
           </div>
 
           <div>
-            <h4 className="text-lg font-semibold mb-4">Company</h4>
+            <h4 className="text-lg font-semibold mb-4 text-gray-200">Pages</h4>
             <ul className="space-y-2">
-              <li>
-                <button
-                  onClick={() => handleNavigation("/about")}
-                  className="text-gray-400 hover:text-primary transition"
-                >
-                  About
-                </button>
-              </li>
-
-              <li>
-                <button
-                  onClick={() => handleNavigation("/blog")}
-                  className="text-gray-400 hover:text-primary transition"
-                >
-                  Blog
-                </button>
-              </li>
-              {/* <li>
-                <button
-                  onClick={() => handleNavigation("/careers")}
-                  className="text-gray-400 hover:text-primary transition"
-                >
-                  Careers
-                </button>
-              </li> */}
-              <li>
-                <button
-                  onClick={() => handleNavigation("/contact")}
-                  className="text-gray-400 hover:text-primary transition"
-                >
-                  Contact
-                </button>
-              </li>
+              {footerData.companyLinks.map((link, index) => (
+                <li key={index}>
+                  <button
+                    onClick={() => handleNavigation(link.path)}
+                    className="text-gray-400 hover:text-primary transition duration-300 transform hover:translate-x-2"
+                  >
+                    {link.name}
+                  </button>
+                </li>
+              ))}
             </ul>
           </div>
 
           <div>
-            <h4 className="text-lg font-semibold mb-4">Contact</h4>
-            <div className="flex items-center text-gray-400">
+            <h4 className="text-xl font-bold mb-4 text-gray-200">
+              Contact
+            </h4>
+            <div className="flex items-center text-gray-400 transition-transform transform hover:scale-105 hover:text-primary">
               <EmailIcon
-                className="mr-2 cursor-pointer"
+                className="mr-2 cursor-pointer hover:text-primary "
                 onClick={() =>
-                  (window.location.href =
-                    "mailto:Business@aaa-digitalmarketing.com")
+                  (window.location.href = `mailto:${footerData.contactInfo.email}`)
                 }
               />
-              <span>Business@aaa-digitalmarketing.com</span>
+              <span>{footerData.contactInfo.email}</span>
             </div>
 
             <div
-              className="flex items-center text-gray-400 mt-4 cursor-pointer"
+              className="flex items-center text-gray-400 mt-4 cursor-pointer hover:text-primary transition-transform transform hover:scale-105 "
               onClick={() =>
-                window.open(
-                  "https://www.google.com/maps/place/Pennsylvania,+USA",
-                  "_blank"
-                )
+                window.open(footerData.contactInfo.addressLink, "_blank")
               }
             >
-              <LocationOnIcon className="mr-2 cursor-pointer" />
-              <span>Headquarter: Pennsylvania, USA</span>
+              <LocationOnIcon className="mr-2" />
+              <span>{footerData.address}</span>
             </div>
           </div>
         </div>
@@ -150,8 +140,8 @@ export default function Footer() {
         <div className="mt-12 pt-8 border-t border-gray-800">
           <div className="text-center text-gray-400">
             <p>
-              &copy; {new Date().getFullYear()} AAA Digital. All rights
-              reserved.
+              &copy; {new Date().getFullYear()}{" "}
+              {footerData.companyLinks[0]?.name}. All rights reserved.
             </p>
           </div>
         </div>
@@ -159,3 +149,5 @@ export default function Footer() {
     </footer>
   );
 }
+
+export default Footer;
