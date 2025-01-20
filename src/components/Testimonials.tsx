@@ -161,7 +161,7 @@ export default function Testimonials() {
     : testimonials;
 
   return (
-    <section className=" mx-10 py-7 rounded-2xl bg-cover relative ">
+    <main className=" mx-10 py-7 rounded-2xl bg-cover relative ">
       <div className="text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 my-2">
           What Our <span className="text-primary">Clients Say</span>
@@ -196,7 +196,6 @@ export default function Testimonials() {
       <section className="w-full z-[400] container mx-auto px-4 py-14">
         <Swiper
           spaceBetween={30}
-          slidesPerView={3}
           loop={true}
           autoplay={{
             delay: 1000,
@@ -209,6 +208,17 @@ export default function Testimonials() {
             slideShadows: true,
             shadowOffset: 20,
             shadowScale: 0.94,
+          }}
+          breakpoints={{
+            320: {
+              slidesPerView: 1,
+            },
+            640: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
           }}
           className="testimonial-swiper"
         >
@@ -232,7 +242,7 @@ export default function Testimonials() {
           </Button>
         </div>
       )}
-    </section>
+    </main>
   );
 }
 
