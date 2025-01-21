@@ -5,7 +5,7 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 
 function Footer() {
   const footerData = {
-    logoSrc: "src/assets/images/logo-white.png",
+    logoSrc: "src/assets/images/aaatech.png",
     description: "Revolutionizing your business with bold, innovative digital solutions that drive exponential growth, ignite operational efficiency, and unlock limitless potential—empowering you to thrive in an ever-evolving digital world.",
     socialLinks: [
       {
@@ -58,7 +58,7 @@ function Footer() {
             <img
               src={footerData.logoSrc}
               alt="Logo"
-              className="mt-2 h-16 w-auto object-cover"
+              className="pt-2 pl-2 h-20 w-auto object-cover"
             />
             <p className="text-gray-200 sm:pr-6 tracking-wider  mt-8 text-sm">
               {footerData.description}
@@ -153,3 +153,5 @@ function Footer() {
 }
 
 export default Footer;
+
+

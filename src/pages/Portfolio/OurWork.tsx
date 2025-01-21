@@ -1,4 +1,7 @@
 import { useState, useEffect, useRef } from "react";
+import { useNavigate } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
+import { Button } from "../../components/ui/Button";
 
 import Testimonials from "../../components/Testimonials";
 import Stats from "../../components/Stats";
@@ -224,6 +227,13 @@ export default function OurWork() {
     setSelectedProject(null);
   };
 
+    const navigate = useNavigate();
+    const handleNavigation = (path: string) => {
+      navigate(path);
+      window.scrollTo(0, 0);
+    };
+
+
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (
@@ -256,14 +266,14 @@ export default function OurWork() {
               presence, and drive long-term growth.
             </p>
             <Button
-              variant="primary"
-              size="md"
-              className="group"
-              onClick={() => handleNavigation("/contact")}
-            >
-              Let's Get Started
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
+                variant="primary"
+                size="md"
+                className="group"
+                onClick={() => navigate("/contact")}
+              >
+                Let's Get Started
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </Button>
           </div>
         </div>
         <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>

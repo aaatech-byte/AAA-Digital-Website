@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import Logo from '../assets/images/logo.png'
+import Logo from "../assets/images/logo.png";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,10 +23,7 @@ export default function Navbar() {
           <div className="flex items-center">
             <Link to="/">
               <span className="text-5xl font-bold cursor-pointer text-primary">
-                <img
-                  src={Logo}
-                  className="mt-2 h-auto w-20 object-cover"
-                />
+                <img src={Logo} className="mt-2 h-auto w-20 object-cover" />
               </span>
             </Link>
           </div>
@@ -36,7 +33,7 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 to={link.to}
-                className="text-gray-700 hover:text-primary transition"
+                className="text-gray-400 font-semibold  hover:-translate-y-0.5 duration-300 hover:text-primary transition"
               >
                 {link.name}
               </Link>
@@ -77,7 +74,7 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 to={link.to}
-                className="block px-3 py-2 text-gray-700 hover:text-primary"
+                className="block px-3 py-2 text-gray-700 font-semibold  hover:-translate-y-0.5 duration-300 hover:text-primary transition"
               >
                 {link.name}
               </Link>

@@ -14,6 +14,7 @@ import {
   Clapperboard,
   ShoppingBag,
   Rss,
+  X
 } from "lucide-react";
 
 const services = [
@@ -220,7 +221,7 @@ export default function Services() {
             className="absolute top-1 right-1 text-gray-500 text-2xl hover:text-gray-700 hover:scale-105"
             onClick={closeModal}
           >
-            x
+            <X className="text-gray-600" />
           </button>
           {renderModalContent()}
         </div>
