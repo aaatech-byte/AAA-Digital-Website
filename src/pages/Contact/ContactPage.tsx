@@ -161,12 +161,7 @@ export default function ContactForm() {
               </select>
             </div>
             <div className="text-center">
-
-
-            
-    
-
-              <Button type="submit" variant="primary" size="lg">
+              <Button type="submit" variant="primary" size="md">
                 Submit
               </Button>
             </div>

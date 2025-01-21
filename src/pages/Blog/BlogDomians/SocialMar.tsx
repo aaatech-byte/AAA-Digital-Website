@@ -1,16 +1,16 @@
 // import { Link } from "react-router-dom";
 // import { WebDev } from './BlogsData/data'
 
-const BlogPage = () => {
+const SocialMarketingBlog = () => {
   const post = {
-    category: "Mobile Development",
+    category: "Social Media Marketing",
     title: "9 Useful Tips to Create a Successful Mobile Application",
     publishDate: "Jan 12, 2025",
     image:
       "https://www.twinsoftbd.com/website/image/services/mobile-app-development.png",
     desc_p1: `
-      We rely heavily on mobile apps in our daily lives. We utilize them for amusement, communication with friends and family, and informational purposes. Over 2.7 billion people throughout the world use smartphones, according to Statista. We spend the majority of the day on our phones, and 90% of that time is spent using different apps. Given that there are 2.2 million apps in the App Store and over 2.7 million in the Google Play store, the battle for mobile consumers' attention is extremely fierce. However, the majority of us only use 9 applications daily and 30 monthly. This implies that there are a ton of apps available that nobody uses because there is no demand from businesses or because the app itself is subpar. One issue with readily available technology is that. Software is available in plenty, but user attention is scarce. Usually, developing the product takes longer than communicating your message. Deep market research and exceptional mobile app development skills are required to distinguish out from the competition. Make sure your product is well-made and suited to the needs of the market.
-    `,
+        We rely heavily on mobile apps in our daily lives. We utilize them for amusement, communication with friends and family, and informational purposes. Over 2.7 billion people throughout the world use smartphones, according to Statista. We spend the majority of the day on our phones, and 90% of that time is spent using different apps. Given that there are 2.2 million apps in the App Store and over 2.7 million in the Google Play store, the battle for mobile consumers' attention is extremely fierce. However, the majority of us only use 9 applications daily and 30 monthly. This implies that there are a ton of apps available that nobody uses because there is no demand from businesses or because the app itself is subpar. One issue with readily available technology is that. Software is available in plenty, but user attention is scarce. Usually, developing the product takes longer than communicating your message. Deep market research and exceptional mobile app development skills are required to distinguish out from the competition. Make sure your product is well-made and suited to the needs of the market.
+      `,
     desc_h1: "How to make a successful Mobile app ?",
     desc_h2: "Essential elements of a successful app",
     desc_p2:
@@ -26,12 +26,12 @@ const BlogPage = () => {
       "If you want your app to be successful, good is not enough. Two-thirds of mobile users clean their phones at least once a month, per Connectthings' 2019 Mobile Usage Trends Report. It entails getting rid of programs they no longer use. Not being listened to is one of the leading causes of app uninstalls in 2019. According to research from Localytics, app users are considerably more inclined to keep using an app if they feel that their data is being listened to. However, your app's performance is crucial to its success. According to Qualitest study, 88% of app users will stop using a mobile app if it contains errors and flaws.",
     desc_h6: "Conclusion",
     desc_p6: `
-    No longer is creating a successful app merely a chance for a small group of intelligent engineers. In actuality, the market for mobile applications and web applications is being dominated by designers, creative entrepreneurs, and inventive marketers. You can simply discover a partner that will give you a top-notch product if you have an excellent idea but lack the necessary software development expertise. Second, you don't have to design your app business with technology in mind. Numerous guidelines are available on topics like "how to design an iOS app," "what programming language is the future," and "which framework is the best choice." These are all significant inquiries. They don't, however, make or break your project, and you don't need to know the answers if you don't have any technical knowledge. All of these issues are ones that can be resolved after a few discussions with a knowledgeable project manager or developer.`,
+      No longer is creating a successful app merely a chance for a small group of intelligent engineers. In actuality, the market for mobile applications and web applications is being dominated by designers, creative entrepreneurs, and inventive marketers. You can simply discover a partner that will give you a top-notch product if you have an excellent idea but lack the necessary software development expertise. Second, you don't have to design your app business with technology in mind. Numerous guidelines are available on topics like "how to design an iOS app," "what programming language is the future," and "which framework is the best choice." These are all significant inquiries. They don't, however, make or break your project, and you don't need to know the answers if you don't have any technical knowledge. All of these issues are ones that can be resolved after a few discussions with a knowledgeable project manager or developer.`,
   };
 
   return (
     <>
-      <main className="w-3/4 pl-10 pt-24 pb-10">
+      <main className="max-w-7xl m-auto pt-24 pb-10">
         <div className="flex justify-between items-center">
           {/* <span className="bg-primary text-white font-bold text-sm px-3 py-2 cursor-pointer shadow-md hover:shadow-lg rounded-2xl ">{post.category}</span> */}
           <p className="text-primary font-bold text-xl cursor-pointer rounded-2xl ">
@@ -51,7 +51,7 @@ const BlogPage = () => {
         />
 
         <div className="descriptions py-3 px-4">
-          <p className="text-gray-800  text-lg leading-9 tracking-wide">
+          <p className="text-gray-800  text-lg leadiang-9 tracking-wide">
             {post.desc_p1}
           </p>
           <p className="text-primary font-bold pt-5 text-2xl leading-9 tracking-wide">
@@ -93,4 +93,4 @@ const BlogPage = () => {
   );
 };
 
-export default BlogPage;
+export default SocialMarketingBlog;

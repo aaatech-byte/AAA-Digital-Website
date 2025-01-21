@@ -242,7 +242,7 @@ function FeaturedWork() {
                 Featured <span className="text-primary">Projects</span>
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Take a look at our recent work, showcasing how we’ve helped
+                Take a look at our recent work, showcasing how we've helped
                 businesses unlock their potential and achieve their digital
                 goals with cutting-edge solutions.
               </p>

@@ -15,6 +15,7 @@ const posts = [
     readTime: "6 min read",
     image:
       "https://images.unsplash.com/photo-1593376893114-1aed528d80cf?q=80&w=1915&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      link: "/blog/web-dev",
   },
   {
     title: "ERP Solutions for Modern Enterprises",
@@ -25,6 +26,7 @@ const posts = [
     readTime: "5 min read",
     image:
       "https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=800&q=80",
+      link: "/blog/custom-software-development",
   },
   {
     title: "Innovative CRM Systems for Customer Engagement",
@@ -35,6 +37,7 @@ const posts = [
     readTime: "4 min read",
     image:
       "https://plus.unsplash.com/premium_photo-1661764570116-b1b0a2da783c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      link: "/blog/digital-marketing",
   },
   {
     title: "The Future of IoT in Business",
@@ -45,6 +48,7 @@ const posts = [
     readTime: "7 min read",
     image:
       "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
+      link: "/blog/app-dev",
   },
   {
     title: "Cloud Computing: Transforming IT Infrastructure",
@@ -55,6 +59,40 @@ const posts = [
     readTime: "5 min read",
     image:
       "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=800&q=80",
+      link: "/blog/e-commerce-solutions",
+  },
+  {
+    title: "Innovative CRM Systems for Customer Engagement",
+    category: "Social Media Marketing",
+    excerpt:
+      "Explore our CRM systems designed to improve customer relationships and drive sales growth.",
+    date: "Mar 15, 2024",
+    readTime: "4 min read",
+    image:
+      "https://plus.unsplash.com/premium_photo-1661764570116-b1b0a2da783c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      link: "/blog/social-media-marketing",
+  },
+  {
+    title: "The Future of IoT in Business",
+    category: "Video Marketing & Branding",
+    excerpt:
+      "Understand how our IoT solutions are connecting devices and driving innovation in various sectors.",
+    date: "Feb 28, 2024",
+    readTime: "9 min read",
+    image:
+      "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
+      link: "/blog/video-marketing",
+  },
+  {
+    title: "Cloud Computing: Transforming IT Infrastructure",
+    category: "E-mail marketing",
+    excerpt:
+      "Learn how our cloud computing solutions are enabling businesses to scale and innovate rapidly.",
+    date: "Feb 10, 2024",
+    readTime: "7 min read",
+    image:
+      "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=800&q=80",
+      link: "/blog/email-marketing",
   },
 ];
 
@@ -176,7 +214,8 @@ export default function Blog() {
                       //     `/blog/${post.title.toLowerCase().replace(/ /g, "-")}`
                       //   )}
                       // onClick={handleReadMore}
-                      onClick={() => handleNavigation("/blog/single-page")}
+                      // onClick={() => handleNavigation("/blog/single-page")}
+                      onClick={() => handleNavigation(post.link)}
                     >
                       Read More
                       <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
@@ -247,3 +286,40 @@ export default function Blog() {
     </main>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

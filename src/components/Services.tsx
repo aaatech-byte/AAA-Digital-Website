@@ -178,9 +178,11 @@ export default function Services() {
               <h3 className="text-xl font-semibold text-gray-900 mb-2">
                 {service.title}
               </h3>
-              <p className="text-gray-600">{service.description}</p>
+              <p className="text-gray-600 inline">{service.description}
+
+                </p>
               <button
-                className="btn mt-4 pb-2"
+                className="btn pb-2"
                 onClick={() => openModal(service)}
               >
                 <span className="text-primary font-bold">See more</span>
@@ -190,7 +192,7 @@ export default function Services() {
                   viewBox="0 0 24 24"
                   width="15px"
                   className="ml-1"
-                >
+                  >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"

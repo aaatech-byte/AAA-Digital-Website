@@ -5,20 +5,29 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 import HomePage from "./pages/Home/HomePage";
-import WebDevelopment from "./pages/Services/WebDevelopment";
-import DigitalMarketing from "./pages/Services/DigitalMarketing";
-import ECommerce from "./pages/Services/ECommerce";
-import SocialMarketing from "./pages/Services/SocialMarketing";
-import VideoMarketing from "./pages/Services/VideoMarketing";
-import ServicesPage from "./pages/Services/ServicesPage";
-import MobileApps from "./pages/Services/MobileApps";
-import CustomSoftware from "./pages/Services/CustomSoftware";
-import EmailMarketing from "./pages/Services/EmailMarketing";
 import About from "./pages/About/AboutPage";
 import OurWork from "./pages/Portfolio/OurWork";
 import ContactForm from "./pages/Contact/ContactPage";
+
+import ServicesPage from "./pages/Services/ServicesPage";
+import WebDevelopment from "./pages/Services/WebDevelopment";
+import MobileApps from "./pages/Services/MobileApps";
+import CustomSoftware from "./pages/Services/CustomSoftware";
+import ECommerce from "./pages/Services/ECommerce";
+import DigitalMarketing from "./pages/Services/DigitalMarketing";
+import SocialMarketing from "./pages/Services/SocialMarketing";
+import VideoMarketing from "./pages/Services/VideoMarketing";
+import EmailMarketing from "./pages/Services/EmailMarketing";
+
 import Blog from "./pages/Blog/Blog";
-import SinglePage from "./pages/Blog/SinglePage";
+import EmailMarBlog from "./pages/Blog/BlogDomians/EmailMar";
+import WebBlog from "./pages/Blog/BlogDomians/WebDev";
+import AppBlog from "./pages/Blog/BlogDomians/AppDev";
+import DigitalMarBlog from "./pages/Blog/BlogDomians/DigitalMarketing";
+import EcomBlog from "./pages/Blog/BlogDomians/Ecom";
+import SocialMarBlog from "./pages/Blog/BlogDomians/SocialMar";
+import VideoMarBlog from "./pages/Blog/BlogDomians/VideoMar";
+import CustomDevBlog from "./pages/Blog/BlogDomians/CustomDev";
 
 function App() {
   return (
@@ -58,8 +67,19 @@ function App() {
           <Route path="/work" element={<OurWork />} />
           <Route path="/contact" element={<ContactForm />} />
           <Route path="/services" element={<ServicesPage />} />
+
           <Route path="/blog" element={<Blog />} />
-          <Route path="/blog/single-page" element={<SinglePage />} />
+          <Route path="/blog/app-dev" element={<AppBlog />} />
+          <Route path="/blog/web-dev" element={<WebBlog />} />
+          <Route path="/blog/digital-marketing" element={<DigitalMarBlog />} />
+          <Route path="/blog/e-commerce" element={<EcomBlog />} />
+          <Route
+            path="/blog/social-media-marketing"
+            element={<SocialMarBlog />}
+          />
+          <Route path="/blog/email-marketing" element={<EmailMarBlog />} />
+          <Route path="/blog/video-marketing" element={<VideoMarBlog />} />
+          <Route path="/blog/custom-software-dev" element={<CustomDevBlog />} />
         </Routes>
         <Footer />
       </div>
