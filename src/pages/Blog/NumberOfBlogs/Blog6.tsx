@@ -4,7 +4,7 @@ const Blog6 = () => {
       title: "The Importance of a Secure E-Commerce Website in 2025",
       publishDate: "Jan 22, 2025",
       image:
-          "https://www.twinsoftbd.com/website/image/services/e-commerce-security.png", // You can replace this with an appropriate image URL
+          "https://www.weetechsolution.com/wp-content/uploads/2023/10/Enable-two-factor-authentication-2FA.jpg", 
       desc_p1: `
           Website security is no longer an afterthought in the world of e-commerce. With cyberattacks on the rise and online fraud becoming more sophisticated, having robust website security in place is essential. In this blog, we’ll explore why website security is crucial for e-commerce businesses in 2025 and provide actionable steps you can take to protect your site and customers.
       `,
@@ -64,7 +64,7 @@ const Blog6 = () => {
               <h1 className="font-bold py-5 font-serif text-4xl">{post.title}</h1>
 
               <img
-                  className="w-full h-72 rounded-3xl object-cover"
+                  className="w-full rounded-3xl object-cover"
                   src={post.image}
                   alt={post.title}
               />

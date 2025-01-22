@@ -5,7 +5,6 @@ import FeaturedWork from '../../components/FeaturedWork';
 import Testimonials from '../../components/Testimonials';
 import ContactForm from '../../components/ContactCTA';
 import OurMission from '../../components/OurMission';
-// import Slider from '../components/Slider'
 
 export default function HomePage() {
   return (
@@ -17,7 +16,6 @@ export default function HomePage() {
       <OurMission/>
       <Stats />
       <ContactForm />
-      {/* <Slider/> */}
     </main>
   );
 }

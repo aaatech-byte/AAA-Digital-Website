@@ -71,8 +71,6 @@ const ProcessStep = ({ stepNumber, title, description, icon }) => {
 
   return (
     <>
-    
-        
       <div className="md:flex hidden flex-col items-center "
       
       >

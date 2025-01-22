@@ -1,9 +1,15 @@
+import { useState } from "react";
+
 import { Star } from "lucide-react";
+
+import { Button } from "./ui/Button";
+
+import "swiper/css/effect-cube";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import "swiper/css/effect-cube";
-import { useState } from "react";
-import { Button } from "./ui/Button";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 const testimonials = [
   {
@@ -196,12 +202,18 @@ export default function Testimonials() {
       <section className="w-full z-[400] container mx-auto px-4 py-14">
         <Swiper
           spaceBetween={30}
+          centeredSlides={true}
           loop={true}
           autoplay={{
-            delay: 1000,
+            delay: 1500,
             disableOnInteraction: false,
           }}
-          pagination={{ clickable: true }}
+          // pagination={{
+          //   clickable: true,
+          // }}
+          // navigation={true}
+          modules={[Autoplay, Pagination, Navigation]}
+          className="mySwiper"
           effect="cube"
           cubeEffect={{
             shadow: true,
@@ -220,7 +232,6 @@ export default function Testimonials() {
               slidesPerView: 3,
             },
           }}
-          className="testimonial-swiper"
         >
           {filteredTestimonials.map((testimonial, index) => (
             <SwiperSlide key={index}>
@@ -284,3 +295,34 @@ const TestimonialsCard = ({ testimonial }) => {
     </section>
   );
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

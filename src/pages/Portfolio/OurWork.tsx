@@ -305,14 +305,14 @@ export default function OurWork() {
                       {project.title}
                     </h3>
                     <p className="text-gray-600 my-3">
-                      {truncateDescription(project.description, 20)}
+                      {truncateDescription(project.description, 18)}
                       {/* Button to show more details */}
                       <button
                         className=" text-black font-semibold"
                         onClick={() => setSelectedProject(project)}
                       >
-                        <span className="text-primary font-extrabold text-xl">
-                          ....{" "}
+                        <span className="text-primary font-bold text-xl">
+                          ..... {" "}
                         </span>
                       </button>
                     </p>
