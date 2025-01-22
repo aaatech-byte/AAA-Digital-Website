@@ -20,14 +20,12 @@ import VideoMarketing from "./pages/Services/VideoMarketing";
 import EmailMarketing from "./pages/Services/EmailMarketing";
 
 import Blog from "./pages/Blog/Blog";
-import EmailMarBlog from "./pages/Blog/BlogDomians/EmailMar";
-import WebBlog from "./pages/Blog/BlogDomians/WebDev";
-import AppBlog from "./pages/Blog/BlogDomians/AppDev";
-import DigitalMarBlog from "./pages/Blog/BlogDomians/DigitalMarketing";
-import EcomBlog from "./pages/Blog/BlogDomians/Ecom";
-import SocialMarBlog from "./pages/Blog/BlogDomians/SocialMar";
-import VideoMarBlog from "./pages/Blog/BlogDomians/VideoMar";
-import CustomDevBlog from "./pages/Blog/BlogDomians/CustomDev";
+import Blog1 from "./pages/Blog/NumberOfBlogs/Blog1";
+import Blog2 from "./pages/Blog/NumberOfBlogs/Blog2";
+import Blog3 from "./pages/Blog/NumberOfBlogs/Blog3";
+import Blog4 from "./pages/Blog/NumberOfBlogs/Blog4";
+import Blog5 from "./pages/Blog/NumberOfBlogs/Blog5";
+import Blog6 from "./pages/Blog/NumberOfBlogs/Blog6";
 
 function App() {
   return (
@@ -69,17 +67,21 @@ function App() {
           <Route path="/services" element={<ServicesPage />} />
 
           <Route path="/blog" element={<Blog />} />
-          <Route path="/blog/app-dev" element={<AppBlog />} />
+          {/* <Route path="/blog/app-dev" element={<AppBlog />} />
           <Route path="/blog/web-dev" element={<WebBlog />} />
           <Route path="/blog/digital-marketing" element={<DigitalMarBlog />} />
           <Route path="/blog/e-commerce" element={<EcomBlog />} />
-          <Route
-            path="/blog/social-media-marketing"
-            element={<SocialMarBlog />}
-          />
+          <Route path="/blog/social-media-marketing" element={<SocialMarBlog />}/>
           <Route path="/blog/email-marketing" element={<EmailMarBlog />} />
           <Route path="/blog/video-marketing" element={<VideoMarBlog />} />
-          <Route path="/blog/custom-software-dev" element={<CustomDevBlog />} />
+          <Route path="/blog/custom-software-dev" element={<CustomDevBlog />} /> */}
+
+          <Route path="/blog/blog1" element={<Blog1 />} />
+          <Route path="/blog/blog2" element={<Blog2 />} />
+          <Route path="/blog/blog3" element={<Blog3 />} />
+          <Route path="/blog/blog4" element={<Blog4 />} />
+          <Route path="/blog/blog5" element={<Blog5 />} />
+          <Route path="/blog/blog6" element={<Blog6 />} />
         </Routes>
         <Footer />
       </div>

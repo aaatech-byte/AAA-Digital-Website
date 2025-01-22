@@ -183,39 +183,39 @@ export default function ServicesPage() {
 
   return (
     <main className="bg-white">
-       <section className="relative h-[95vh] bg-white bg-[url('https://png.pngtree.com/thumb_back/fw800/background/20240328/pngtree-flat-lay-top-view-office-table-desk-image_15644935.jpg')] bg-center bg-cover">
-       <div className="absolute  bg-gray-100 w-[100%] h-[95vh] opacity-80"></div>
-      <section className="relative pt-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-20">
-          <div className="text-center">
-            <span className="text-primary text-2xl font-bold tracking-wide uppercase">
-              Our Services
-            </span>
-            <h1 className="mt-4 text-3xl md:text-6xl font-bold text-gray-900 mb-8">
-              Transform{" "}
-              <span className="text-primary">Your Digital Presence</span>
-            </h1>
-            <p className="text-xl text-gray-600 mb-4 max-w-3xl mx-auto">
-              At AAA Digital, we understand that every business has unique
-              needs. That's why we offer a wide range of tailored digital
-              services to help your business thrive online. From stunning
-              websites to powerful mobile apps, our solutions are designed to
-              drive growth, boost engagement, and increase conversions.
-            </p>
+      <section className="relative h-[95vh] bg-white bg-[url('https://png.pngtree.com/thumb_back/fw800/background/20240328/pngtree-flat-lay-top-view-office-table-desk-image_15644935.jpg')] bg-center bg-cover">
+        <div className="absolute  bg-gray-100 w-[100%] h-[95vh] opacity-80"></div>
+        <section className="relative pt-20">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-20">
+            <div className="text-center">
+              <span className="text-primary text-2xl font-bold tracking-wide uppercase">
+                Our Services
+              </span>
+              <h1 className="mt-4 text-3xl md:text-6xl font-bold text-gray-900 mb-8">
+                Transform{" "}
+                <span className="text-primary">Your Digital Presence</span>
+              </h1>
+              <p className="text-xl text-gray-600 mb-4 max-w-3xl mx-auto">
+                At AAA Digital, we understand that every business has unique
+                needs. That's why we offer a wide range of tailored digital
+                services to help your business thrive online. From stunning
+                websites to powerful mobile apps, our solutions are designed to
+                drive growth, boost engagement, and increase conversions.
+              </p>
 
-            <Button
-              variant="primary"
-              size="md"
-              className="group"
-              onClick={() => handleNavigation("/contact")}
-            >
-              Let's Get Started
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
+              <Button
+                variant="primary"
+                size="md"
+                className="group"
+                onClick={() => handleNavigation("/contact")}
+              >
+                Let's Get Started
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </div>
           </div>
-        </div>
-        {/* <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div> */}
-      </section>
+          {/* <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div> */}
+        </section>
       </section>
 
       <section id="services" className="py-10 bg-white">
@@ -258,7 +258,6 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
-      
 
       <FeaturedWork />
       <Stats />

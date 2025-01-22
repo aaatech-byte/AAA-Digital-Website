@@ -1,13 +1,9 @@
-// import { Link } from "react-router-dom";
-// import { WebDev } from './BlogsData/data'
-
-const WebDevBlog = () => {
+const Blog1 = () => {
   const post = {
     category: "Web Development",
     title: "Why Your Website Needs a Mobile-First Design in 2025",
     publishDate: "Jan 12, 2025",
-    image:
-      "https://media.licdn.com/dms/image/D4D12AQFNwdaM_lbYQA/article-cover_image-shrink_720_1280/0/1686822959705?e=2147483647&v=beta&t=ve99KPOUhOtkJShRn80s84HjkLDqtFTnTwy--Ss5B6s",
+    image:"https://media.licdn.com/dms/image/D4D12AQFNwdaM_lbYQA/article-cover_image-shrink_720_1280/0/1686822959705?e=2147483647&v=beta&t=ve99KPOUhOtkJShRn80s84HjkLDqtFTnTwy--Ss5B6s",
     desc_h1: "Introduction:",
     desc_p1: `
         The digital landscape is shifting rapidly, and mobile-first design has become a necessity for websites in 2025. With over half of all global web traffic coming from mobile devices, it’s more important than ever for businesses to prioritize mobile optimization. Discover how this design strategy can enhance SEO, user experience, and conversion rates.
@@ -47,9 +43,9 @@ const WebDevBlog = () => {
       <main className="max-w-7xl m-auto pt-24 pb-10">
         <div className="flex justify-between items-center">
           {/* <span className="bg-primary text-white font-bold text-sm px-3 py-2 cursor-pointer shadow-md hover:shadow-lg rounded-2xl ">{post.category}</span> */}
-          <p className="text-primary font-bold text-xl cursor-pointer rounded-2xl ">
+          {/* <p className="text-primary font-bold text-xl cursor-pointer rounded-2xl ">
             {post.category}
-          </p>
+          </p> */}
           <p className="text-gray-400 text-xl font-semibold italic">
             {post.publishDate}
           </p>
@@ -57,11 +53,7 @@ const WebDevBlog = () => {
 
         <h1 className="font-bold py-5 font-serif text-4xl">{post.title}</h1>
 
-        <img
-          className="w-full rounded-2xl"
-          src={post.image}
-          alt={post.title}
-        />
+        <img className="w-full rounded-2xl" src={post.image} alt={post.title} />
 
         <div className="descriptions py-3 px-4">
           <p className="text-primary font-bold pt-5 text-2xl leading-9 tracking-wide">
@@ -109,9 +101,8 @@ const WebDevBlog = () => {
           <p className="text-primary font-bold pt-5 text-xl leading-9 tracking-wide">
             {post.desc_h9}
           </p>
-          <p className="text-gray-800 text-lg leading-9 tracking-wide">
-          </p>
-            {post.desc_p7}
+          <p className="text-gray-800 text-lg leading-9 tracking-wide"></p>
+          {post.desc_p7}
           <p className="text-primary font-bold pt-5 text-xl leading-9 tracking-wide">
             {post.desc_h10}
           </p>
@@ -136,7 +127,7 @@ const WebDevBlog = () => {
           <p className="text-gray-800 text-lg leading-9 tracking-wide">
             {post.desc_p11}
           </p>
-          <p className="text-primary font-bold pt-5 text-xl leading-9 tracking-wide">
+          <p className="text-primary font-bold pt-5 text-2xl leading-9 tracking-wide">
             {post.desc_h14}
           </p>
           <p className="text-gray-800 text-lg leading-9 tracking-wide">
@@ -148,4 +139,6 @@ const WebDevBlog = () => {
   );
 };
 
-export default WebDevBlog;
+export default Blog1;
+
+

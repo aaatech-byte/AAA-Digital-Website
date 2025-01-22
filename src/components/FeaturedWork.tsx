@@ -3,11 +3,9 @@ import { useNavigate } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { Button } from "./ui/Button";
 
-import Testimonials from "./Testimonials";
-import Stats from "./Stats";
-
 function FeaturedWork() {
   const [selectedCategory, setSelectedCategory] = useState(null);
+  const [expandedProject, setExpandedProject] = useState(null);
 
   const [initialProjects] = useState([
     {
@@ -232,12 +230,16 @@ function FeaturedWork() {
     navigate("/work");
   };
 
+  const handleReadMoreClick = (index) => {
+    setExpandedProject(expandedProject === index ? null : index);
+  };
+
   return (
     <>
       <main className="bg-gray-50">
         <section className="container max-w-7xl py-7 mx-auto p-4 ">
           <div>
-            <div className="text-center mb-16">
+            <div className="text-center mb-8">
               <h2 className=" text-3xl md:text-4xl font-bold text-gray-900 mb-4">
                 Featured <span className="text-primary">Projects</span>
               </h2>
@@ -248,14 +250,15 @@ function FeaturedWork() {
               </p>
             </div>
 
-            <div className="text-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl">
+            {/* <div className="text-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl"> */}
+            <div className="text-center flex flex-wrap justify-center items-center gap-2 max-w-7xl">
               {categories.map((category) => (
                 <div
                   key={category}
-                  className="bg-white rounded-2xl shadow-md p-4 text-gray-500 hover:text-emerald-500 hover:font-bold font-semibold translate-y-0 cursor-pointer hover:shadow-xl duration-150 transition scale-95"
+                  className="bg-white rounded-2xl shadow-md p-1 sm:p-3 text-gray-500 hover:text-emerald-500 hover:font-bold font-semibold translate-y-0 cursor-pointer hover:shadow-xl duration-500 transition hover:scale-100 scale-95"
                   onClick={() => handleCategoryClick(category)}
                 >
-                  <h2 className="text-base ">{category}</h2>
+                  <h2 className="text-xs sm:text-sm ">{category}</h2>
                 </div>
               ))}
             </div>
@@ -283,7 +286,21 @@ function FeaturedWork() {
                     <h3 className="text-xl font-bold text-gray-900 mt-2 mb-3">
                       {project.title}
                     </h3>
-                    <p className="text-gray-600 mb-4">{project.description}</p>
+                    <p className="text-gray-600 mb-1">
+                      {expandedProject === index
+                        ? project.description
+                        : `${project.description.substring(0, 150)}...`}
+                    </p>
+                    {project.description.length > 150 && (
+                      <button
+                        className="btn pb-2"
+                        onClick={() => handleReadMoreClick(index)}
+                      >
+                        <span className="text-primary font-semibold">
+                          {expandedProject === index ? "Read less" : "Read More"}
+                        </span>
+                      </button>
+                    )}
                   </div>
                 </div>
               ))}

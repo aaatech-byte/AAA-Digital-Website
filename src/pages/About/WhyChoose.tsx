@@ -59,7 +59,7 @@ const WhyChooseUs = () => {
                 <div className="flex items-center justify-center gap-4 rounded-lg">
                   <div className="w-11">
                     <img
-                      className="rounded-full"
+                      className="rounded-full w-11"
                       src="https://jthemes.net/themes/html/growim/assets/images/resources/why-choose-three-author.jpg"
                       alt=""
                     />
@@ -86,13 +86,13 @@ const WhyChooseUs = () => {
             </div>
 
             {/* Right Section (Image + Girl Animation) */}
-            <div className="w-full md:w-1/2 relative pl-0 md:pl-28">
-              <img src={bg_1} className="w-full md:w-10/12" alt="Background" />
+            <div className="w-full md:w-1/2 flex justify-center items-center relative pl-0 md:pl-28">
+              <img src={bg_1} className=" md:w-10/12 w-2/3" alt="Background" />
               <div>
                 <img
                   src={girl_img}
                   alt="Why Choose Us"
-                  className="w-10/12 bottom-0 -left-12 absolute"
+                  className="md:w-10/12 w-2/3 bottom-0 left-20 md:-left-12 absolute"
                 />
               </div>
             </div>

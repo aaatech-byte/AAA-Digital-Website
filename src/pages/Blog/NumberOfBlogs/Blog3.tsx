@@ -1,4 +1,4 @@
-const ECommerceBlog = () => {
+const Blog3 = () => {
   const post = {
     category: "E-commerce Solutions",
     title: "How to Build an E-Commerce Website That Converts in 2025",
@@ -56,9 +56,9 @@ const ECommerceBlog = () => {
     <>
       <main className="max-w-7xl m-auto pt-24 pb-10">
         <div className="flex justify-between items-center">
-          <p className="text-primary font-bold text-xl cursor-pointer rounded-2xl">
+          {/* <p className="text-primary font-bold text-xl cursor-pointer rounded-2xl">
             {post.category}
-          </p>
+          </p> */}
           <p className="text-gray-400 text-xl font-semibold italic">
             {post.publishDate}
           </p>
@@ -151,4 +151,4 @@ const ECommerceBlog = () => {
   );
 };
 
-export default ECommerceBlog;
+export default Blog3;

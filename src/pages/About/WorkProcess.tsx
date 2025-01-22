@@ -73,7 +73,7 @@ const ProcessStep = ({ stepNumber, title, description, icon }) => {
     <>
     
         
-      <div className="flex flex-col items-center "
+      <div className="md:flex hidden flex-col items-center "
       
       >
         {isReversed ? (
