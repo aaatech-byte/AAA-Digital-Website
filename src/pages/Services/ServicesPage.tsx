@@ -186,7 +186,7 @@ export default function ServicesPage() {
       <section className="relative h-[95vh] bg-white bg-[url('https://png.pngtree.com/thumb_back/fw800/background/20240328/pngtree-flat-lay-top-view-office-table-desk-image_15644935.jpg')] bg-center bg-cover">
         <div className="absolute  bg-gray-100 w-[100%] h-[95vh] opacity-80"></div>
         <section className="relative pt-20">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-20">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-28">
             <div className="text-center">
               <span className="text-primary text-2xl font-bold tracking-wide uppercase">
                 Our Services

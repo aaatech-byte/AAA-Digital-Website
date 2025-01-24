@@ -59,7 +59,7 @@ export const Button: React.FC<ButtonProps> = ({
     'relative inline-flex justify-centent-center items-center text-lg font-medium tracking-wide cursor-pointer transition-all duration-500 ease-in-out rounded-lg';
 
   const variants = {
-    primary: 'text-[#10b981] bg-transparent border-2 border-[#10b981] hover:text-white hover:shadow-[inset_0_-100px_0_0_#10b981]',
+    primary: 'text-[#1bce8c] bg-transparent border-2 border-[#1bce8c] hover:text-white hover:shadow-[inset_0_-100px_0_0_#1bce8c]',
     secondary: 'text-emerald-500 bg-transparent border-2 border-[#0edcac] hover:text-white hover:shadow-[inset_0_-100px_0_0_#0edcac]',
     outline: 'text-[#0edcac] bg-transparent border-2 border-[#0edcac] hover:bg-[#0edcac] hover:text-white hover:shadow-[inset_0_-100px_0_0_#0edcac]',
   };

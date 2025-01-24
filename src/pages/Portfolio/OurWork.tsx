@@ -256,7 +256,7 @@ export default function OurWork() {
       <section className="relative h-[95vh] bg-white bg-[url('https://png.pngtree.com/thumb_back/fh260/background/20230801/pngtree-top-tips-to-make-money-blogging-image_12958761.jpg')] bg-center bg-cover">
         <div className="absolute  bg-gray-100 w-[100%] h-[95vh] opacity-60"></div>
         <div className="relative z-40 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-22 md:py-24 ">
-          <div className="text-center pt-44">
+          <div className="text-center pt-32">
             <h1 className="mt-4 text-3xl md:text-6xl font-bold text-gray-800 mb-6">
               Projects We've <span className="text-primary">Delivered</span>
             </h1>

@@ -45,7 +45,7 @@ const testimonials = [
     content:
       "The app they created for our bike rental business is intuitive and feature-rich. It’s helped us improve bookings and deliver a better customer experience.",
     image:
-      "https://images.unsplash.com/photo-1505914701055-bf56d64088d4?auto=format&fit=crop&w=150&q=80",
+      "https://media.istockphoto.com/id/1476171646/photo/young-woman-ready-for-job-business-concept.jpg?s=612x612&w=0&k=20&c=DaYoIWA0PemBp_gwRflBhZH193puk3z-chb7N12adfY=",
     category: "Mobile App Development",
   },
   {
@@ -54,7 +54,7 @@ const testimonials = [
     content:
       "Their team launched a stunning Shopify store for our skincare brand, and it’s been a game-changer. Sales have been consistently growing since day one!",
     image:
-      "https://images.unsplash.com/photo-1493376552683-31e3c57a84ea?auto=format&fit=crop&w=150&q=80",
+      "https://www.shutterstock.com/image-photo/confident-smiling-middle-aged-business-600nw-2451544833.jpg",
     category: "E-Commerce Solutions",
   },
   {
@@ -63,7 +63,7 @@ const testimonials = [
     content:
       "Our online furniture store needed an overhaul, and they delivered a platform that’s fast, secure, and optimized for sales. It’s a huge win for our business.",
     image:
-      "https://images.unsplash.com/photo-1517362537966-d46c4c1fcdc2?auto=format&fit=crop&w=150&q=80",
+      "https://www.shutterstock.com/image-photo/headshot-smiling-handsome-hindu-man-260nw-2115297203.jpg",
     category: "E-Commerce Solutions",
   },
   {
@@ -72,7 +72,7 @@ const testimonials = [
     content:
       "Thanks to their SEO expertise, our website now ranks on the first page for several competitive keywords. We’ve seen a 40% increase in organic traffic!",
     image:
-      "https://images.unsplash.com/photo-1501805077538-f3972ea505bc?auto=format&fit=crop&w=150&q=80",
+      "https://img.freepik.com/free-photo/portrait-businesswoman-window-2_1262-1491.jpg",
     category: "SEO & Digital Marketing",
   },
   {
@@ -81,7 +81,7 @@ const testimonials = [
     content:
       "Their social media strategy and ad management have given us the exposure we needed. Leads are pouring in, and we’re thrilled with the results.",
     image:
-      "https://images.unsplash.com/photo-1573497164405-61cba2c0888b?auto=format&fit=crop&w=150&q=80",
+      "https://i.pinimg.com/originals/37/4c/c0/374cc0b39ee69f4f2b3eb29de7aea684.jpg",
     category: "SEO & Digital Marketing",
   },
   {
@@ -90,7 +90,7 @@ const testimonials = [
     content:
       "Our app’s new design is a hit with our users! It’s intuitive, visually stunning, and has significantly improved retention rates.",
     image:
-      "https://images.unsplash.com/photo-1477989684386-2e8b034f91bb?auto=format&fit=crop&w=150&q=80",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmtFvVKz3jmx8wSX7U5WiK-g6tN7pVr4lkCA&s",
     category: "UI/UX Design",
   },
   {
@@ -99,7 +99,7 @@ const testimonials = [
     content:
       "They redesigned our website with a clean, modern look, making it much easier for customers to navigate. The results have been fantastic.",
     image:
-      "https://images.unsplash.com/photo-1512730555111-75511a9edfff?auto=format&fit=crop&w=150&q=80",
+      "https://www.shutterstock.com/image-photo/headshot-satisfied-cheerful-handsome-man-260nw-793117360.jpg",
     category: "UI/UX Design",
   },
   {
@@ -108,7 +108,7 @@ const testimonials = [
     content:
       "Our website’s loading time was a major issue, but after their optimization, it’s blazing fast. The improvement in user experience is incredible.",
     image:
-      "https://images.unsplash.com/photo-1556742522-ec7c0d1e44f2?auto=format&fit=crop&w=150&q=80",
+      "https://st4.depositphotos.com/4678277/28917/i/450/depositphotos_289173464-stock-photo-close-up-photo-amazing-he.jpg",
     category: "Performance Optimization",
   },
   {
@@ -117,7 +117,7 @@ const testimonials = [
     content:
       "They streamlined our site’s performance, and the difference is clear. Both our traffic and conversions have seen a noticeable boost.",
     image:
-      "https://images.unsplash.com/photo-1534233709757-357b6a85d372?auto=format&fit=crop&w=150&q=80",
+      "https://t4.ftcdn.net/jpg/02/19/63/31/360_F_219633151_BW6TD8D1EA9OqZu4JgdmeJGg4JBaiAHj.jpg",
     category: "Performance Optimization",
   },
   {
@@ -126,7 +126,7 @@ const testimonials = [
     content:
       "Their custom software solution has completely transformed our supply chain operations. It’s efficient, reliable, and easy to use.",
     image:
-      "https://images.unsplash.com/photo-1532001747389-bf28c9a1c5cc?auto=format&fit=crop&w=150&q=80",
+      "https://media.istockphoto.com/id/1437816897/photo/business-woman-manager-or-human-resources-portrait-for-career-success-company-we-are-hiring.jpg?s=612x612&w=0&k=20&c=tyLvtzutRh22j9GqSGI33Z4HpIwv9vL_MZw_xOE19NQ=",
     category: "Custom Software Solutions",
   },
   {
@@ -135,7 +135,7 @@ const testimonials = [
     content:
       "We had a complex workflow issue that required a unique solution, and they nailed it. The software has saved us countless hours and improved productivity.",
     image:
-      "https://images.unsplash.com/photo-1561016238-7508cf500e55?auto=format&fit=crop&w=150&q=80",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjDGMp734S91sDuUFqL51_xRTXS15iiRoHew&s",
     category: "Custom Software Solutions",
   },
 ];
@@ -167,7 +167,7 @@ export default function Testimonials() {
     : testimonials;
 
   return (
-    <main className=" mx-10 py-7 rounded-2xl bg-cover relative ">
+    <main className=" mx-2 sm:mx-10 py-7 rounded-2xl bg-cover relative ">
       <div className="text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 my-2">
           What Our <span className="text-primary">Clients Say</span>
@@ -176,7 +176,8 @@ export default function Testimonials() {
           Don't just take our word for it - hear from some of our satisfied
           clients.
         </p>
-        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 px-6 py-4 text-center">
+        {/* <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 px-6 py-4 text-center"> */}
+        <div className="flex justify-center items-center flex-wrap flex-1">
           {categories.map((category) => (
             // <div
             //   key={category}
@@ -225,7 +226,7 @@ export default function Testimonials() {
             320: {
               slidesPerView: 1,
             },
-            640: {
+            740: {
               slidesPerView: 2,
             },
             1024: {
@@ -261,7 +262,7 @@ const TestimonialsCard = ({ testimonial }) => {
   return (
     <section className="bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-gray-50 rounded-xl p-8 shadow-lg">
+        <div className="bg-gray-50 rounded-xl p-3 sm:p-6 h-full sm:h-[21rem] mb-2 shadow-lg">
           <div className="flex items-center mb-4">
             {Array.from({ length: 5 }).map((_, i) => (
               <Star key={i} className="h-5 w-5 text-yellow-400" />

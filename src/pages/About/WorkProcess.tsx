@@ -36,7 +36,7 @@ const WorkingProcess = () => {
   ];
 
   return (
-    <section
+    <section className="work-process"
      style={{
         background: 'linear-gradient(356deg, #0bbf8b3b, transparent)'
       }}

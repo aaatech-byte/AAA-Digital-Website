@@ -41,7 +41,7 @@ function App() {
           />
           <Route path="/services/mobile-apps" element={<MobileApps />} />
           <Route
-            path="/services/di  tal-marketing"
+            path="/services/digital-marketing"
             element={<DigitalMarketing />}
           />
           <Route path="/services/ecommerce" element={<ECommerce />} />
@@ -90,3 +90,4 @@ function App() {
 }
 
 export default App;
+

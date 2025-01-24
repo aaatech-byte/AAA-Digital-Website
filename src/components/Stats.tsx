@@ -39,7 +39,7 @@ function StatItem({ number, label, suffix }) {
         {inView ? (
           <CountUp end={number} suffix={suffix} duration={5} />
         ) : (
-          <span className="text-primary">0{suffix}</span>
+          <span className="text-[#0edcac]">0{suffix}</span>
         )}
       </div>
       <div className="text-gray-50 mt-3 text-xl font-bold">{label}</div>

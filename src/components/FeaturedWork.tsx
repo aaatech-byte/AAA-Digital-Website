@@ -277,7 +277,7 @@ function FeaturedWork() {
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-48 object-cover"
+                    className="w-full h-48"
                   />
                   <div className="p-6">
                     <span className="text-primary font-semibold">
@@ -297,7 +297,9 @@ function FeaturedWork() {
                         onClick={() => handleReadMoreClick(index)}
                       >
                         <span className="text-primary font-semibold">
-                          {expandedProject === index ? "Read less" : "Read More"}
+                          {expandedProject === index
+                            ? "Read less"
+                            : "Read More"}
                         </span>
                       </button>
                     )}

@@ -1,34 +1,34 @@
-import React from "react";
-import { Search, TrendingUp, Globe, FileText } from "lucide-react";
+import { Video, Zap , Megaphone, Clapperboard } from "lucide-react";
 import ServiceHero from "./ServiceHero";
 import ProcessTimeline from "../../components/ProcessTimeline";
 import ContactCTA from "../../components/ContactCTA";
 
 const features = [
   {
-    icon: "Search", // Example icon
+    icon: Video,
     title: "Explainer Videos",
     description:
       "Simplify complex concepts with engaging and informative explainer videos.",
   },
   {
-    icon: "TrendingUp", // Example icon
-    title: "Brand Storytelling",
-    description:
-      " Build an emotional connection with your audience through powerful brand stories.",
-  },
-  {
-    icon: "Globe", // Example icon
+    icon: Megaphone,
     title: "Product Demos & Tutorials",
     description:
       "Showcase your products in action with compelling video demos and tutorials.",
   },
   {
-    icon: "FileText", // Example icon
-    title: "Video Ads & Social Media Clips",
-    description: " Drive conversions and awareness with targeted video ads.",
+    icon: Clapperboard,
+    title: "Execution & Campaigns",
+        description: "Implementing engaging campaigns and content strategies that resonate with your audience and drive meaningful interactions.",
+  },
+  {
+    icon: Zap,
+    title: "Brand Storytelling",
+    description:
+      " Build an emotional connection with your audience through powerful brand stories.",
   },
 ];
+
 
 const process = [
   {

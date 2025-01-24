@@ -1,30 +1,29 @@
-import React from "react";
-import { Search, TrendingUp, Globe, FileText } from "lucide-react";
+import { Video, Zap , Megaphone, Clapperboard } from "lucide-react";
 import ServiceHero from "./ServiceHero";
 import ProcessTimeline from "../../components/ProcessTimeline";
 import ContactCTA from "../../components/ContactCTA";
 
 const features = [
   {
-    icon: "Search", // Example icon
+    icon: Video,
     title: "Email Campaign Management",
     description:
       "Create targeted email campaigns that resonate with your audience.",
   },
   {
-    icon: "TrendingUp", // Example icon
+    icon: Megaphone,
     title: "Marketing Automation",
     description:
       "Automate your marketing to save time and increase efficiency.",
   },
   {
-    icon: "Globe", // Example icon
+    icon: Clapperboard,
     title: "Lead Generation Campaigns",
     description:
       "Build a strong email list and generate high-quality leads.",
   },
   {
-    icon: "FileText", // Example icon
+    icon: Zap,
     title: "List Segmentation",
     description: "Segment your audience for more personalized and effective campaigns.",
   },

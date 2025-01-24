@@ -23,16 +23,16 @@ const WhyChooseUs = () => {
                 of using lorem the is Ipsum less normal.
               </p>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 pb-5">
-                <div className="flex items-center justify-center gap-4 rounded-lg">
+              <div className="grid grid-cols-2 gap-4 sm:gap-8 pt-2 sm:pt-5">
+                <div className="flex items-center justify-center gap-2 sm:gap-4 rounded-lg">
                   <div className="bg-gray-100 rounded-xl p-2">
                     <TrendingUp className="w-8 h-8 text-emerald-500" />
                   </div>
-                  <h2 className="text-lg text-gray-800 font-bold mt-4 text-center sm:text-left">
+                  <h2 className="text-sm sm:text-lg text-gray-800 font-bold mt-4 text-center sm:text-left">
                     Business Growth
                   </h2>
                 </div>
-                <div className="flex items-center justify-center gap-4 rounded-lg">
+                <div className="flex items-center justify-center gap-2 sm:gap-4 rounded-lg">
                   <div className="bg-gray-100 rounded-xl p-2">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -47,16 +47,16 @@ const WhyChooseUs = () => {
                       <path d="M12 2l9 9-9 9-9-9 9-9z" />
                     </svg>
                   </div>
-                  <h2 className="text-lg text-gray-800 font-bold mt-4 text-center sm:text-left">
+                  <h2 className="text-sm sm:text-lg text-gray-800 font-bold mt-4 text-center sm:text-left">
                     Technology Consultancy
                   </h2>
                 </div>
               </div>
 
-              <hr className="my-2" />
+              <hr className="my-1 sm:my-2" />
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 pt-5">
-                <div className="flex items-center justify-center gap-4 rounded-lg">
+              <div className="grid grid-cols-2 gap-4 sm:gap-8 pt-2 sm:pt-5">
+                <div className="flex items-center justify-center gap-2 sm:gap-4 rounded-lg">
                   <div className="w-11">
                     <img
                       className="rounded-full w-11"
@@ -64,20 +64,20 @@ const WhyChooseUs = () => {
                       alt=""
                     />
                   </div>
-                  <h2 className="text-lg text-gray-800 font-semibold mt-4 text-center sm:text-left">
+                  <h2 className="text-sm sm:text-lg text-gray-800 font-semibold mt-4 text-center sm:text-left">
                     Muhammad Haseeb <br />
-                    <span className="font-medium text-gray-500 text-sm">
+                    <span className="font-medium text-gray-500 text-xs sm:text-sm">
                       Founder
                     </span>
                   </h2>
                 </div>
-                <div className="flex items-center gap-4 rounded-lg">
+                <div className="flex items-center gap-2 sm:gap-4 rounded-lg">
                   <div className="bg-emerald-600 rounded-xl p-3">
                     <PhoneCall className="text-white w-6 h-6" />
                   </div>
-                  <h2 className="text-lg text-gray-500 font-semibold  text-center sm:text-left">
+                  <h2 className="text-sm sm:text-lg text-gray-500 font-semibold  text-center sm:text-left">
                     Call us now <br />
-                    <span className="font-medium text-xl text-gray-800">
+                    <span className="font-medium text-base sm:text-xl text-gray-800">
                       +208-555-0112
                     </span>
                   </h2>
@@ -92,7 +92,7 @@ const WhyChooseUs = () => {
                 <img
                   src={girl_img}
                   alt="Why Choose Us"
-                  className="md:w-10/12 w-2/3 bottom-0 left-20 md:-left-12 absolute"
+                  className="md:w-10/12 w-2/3 bottom-0 left-20 md:left-12 absolute"
                 />
               </div>
             </div>

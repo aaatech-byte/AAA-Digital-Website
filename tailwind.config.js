@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#0edcac', // Emerald green
+        primary: '#0000', // Emerald green
         secondary: '#064E3B', // Dark green
         accent: '#34D399', // Light green
       },

@@ -36,18 +36,18 @@ export default function Hero() {
         <div className="absolute  bg-gray-100 w-[100%] h-[100%] opacity-60"></div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-52">
-          <div className="text-center">
+          <div className="text-center pt-24 sm:pt-0">
             <span className="text-primary text-2xl my-5 font-bold tracking-wide uppercase">
               Your Partner in Digital Growth
             </span>
-            <h1 className="my-5 text-3xl md:text-4xl font-bold text-primary">
+            <h1 className="my-5 text-2xl md:text-4xl font-bold text-primary">
               Let’s Build
               <span className=" text-gray-900">
                 {" "}
                 Something Extraordinary Together{" "}
               </span>
             </h1>
-            <p className="text-lg text-gray-600 my-5 pb-5 max-w-2xl mx-auto">
+            <p className="text-base sm:textlg text-gray-600 my-5 pb-5 max-w-2xl mx-auto">
               We create stunning websites, build next-gen mobile apps, and
               deliver custom software solutions to transform your business. With
               data-driven digital marketing strategies, we help you connect,
