@@ -45,7 +45,7 @@ const Blog4 = () => {
 
   return (
     <>
-      <main className="max-w-7xl m-auto pt-24 pb-10">
+      <main className="max-w-4xl m-auto pt-24 pb-10">
         <div className="flex justify-between items-center">
           {/* <p className="text-primary font-bold text-xl cursor-pointer rounded-2xl ">
             {post.category}

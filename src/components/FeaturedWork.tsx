@@ -52,7 +52,7 @@ function FeaturedWork() {
       description:
         "ArtHouse Collective needed an online presence that could effectively showcase their creative work. Their previous portfolio lacked visibility and interactive features, resulting in low engagement and limited exposure for their unique projects.",
       image:
-        "https://www.wsiworld.com/hubfs/2019/Digital-Marketing-Map-System.png",
+        "https://images.unsplash.com/photo-1519074002996-a69e7ac46a42?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       features: ["Fast load times", "Smooth animations", "Engaging features"],
       challenge: "Low visibility of creative work.",
       solution:
@@ -230,20 +230,20 @@ function FeaturedWork() {
     navigate("/work");
   };
 
-  const handleReadMoreClick = (index) => {
-    setExpandedProject(expandedProject === index ? null : index);
-  };
+  // const handleReadMoreClick = (index) => {
+  //   setExpandedProject(expandedProject === index ? null : index);
+  // };
 
   return (
     <>
       <main className="bg-gray-50">
-        <section className="container max-w-7xl py-7 mx-auto p-4 ">
+        <section className="container max-7xl mx-auto p-4 ">
           <div>
             <div className="text-center mb-8">
               <h2 className=" text-3xl md:text-4xl font-bold text-gray-900 mb-4">
                 Featured <span className="text-primary">Projects</span>
               </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              <p className="text-xl text-gray-600 max-w-4xl mx-auto">
                 Take a look at our recent work, showcasing how we've helped
                 businesses unlock their potential and achieve their digital
                 goals with cutting-edge solutions.
@@ -251,7 +251,7 @@ function FeaturedWork() {
             </div>
 
             {/* <div className="text-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl"> */}
-            <div className="text-center flex flex-wrap justify-center items-center gap-2 max-w-7xl">
+            <div className=" flex flex-wrap justify-center items-center gap-2 ">
               {categories.map((category) => (
                 <div
                   key={category}
@@ -264,29 +264,41 @@ function FeaturedWork() {
             </div>
           </div>
 
-          <div className="mt-8">
+          <div className="mt-8 max-w-6xl mx-auto">
             {selectedCategory && (
               <h2 className="text-2xl font-bold mb-4">{selectedCategory}</h2>
             )}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+
+
+
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" 
+            onClick={() => handleViewAllClick()}
+            >
               {filteredProjects.map((project, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition translate-y-0 cursor-pointer scale-95 duration-300 hover:scale-100 hover:-translate-y-2"
+                  className=" rounded-xl overflow-hidden  transition translate-y-0 cursor-pointer scale-95 duration-300 hover:scale-100 hover:-translate-y-2"
                 >
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-48"
+                    className="w-full rounded-2xl h-60"
                   />
-                  <div className="p-6">
-                    <span className="text-primary font-semibold">
+                  <div className="py-4">
+                    <span className="text-white bg-primary rounded-2xl p-1.5 text-xs font-semibold">
                       {project.category}
                     </span>
                     <h3 className="text-xl font-bold text-gray-900 mt-2 mb-3">
                       {project.title}
                     </h3>
-                    <p className="text-gray-600 mb-1">
+                     <p className="text-gray-600 mb-1">
+                      { project.description}
+                     </p>
+
+
+
+                    {/* <p className="text-gray-600 mb-1">
                       {expandedProject === index
                         ? project.description
                         : `${project.description.substring(0, 150)}...`}
@@ -302,7 +314,7 @@ function FeaturedWork() {
                             : "Read More"}
                         </span>
                       </button>
-                    )}
+                    )} */}
                   </div>
                 </div>
               ))}

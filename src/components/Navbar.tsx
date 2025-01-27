@@ -1,20 +1,39 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import Logo from "../assets/images/logo.png";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation(); 
+  const navbarRef = useRef(null); 
 
-  // Dynamic data for navigation links
   const navLinks = [
     { name: "Home", to: "/" },
     { name: "About", to: "/about" },
     { name: "Services", to: "/services" },
     { name: "Portfolio", to: "/work" },
     { name: "Blogs", to: "/blog" },
-    // { name: "Contact", to: "/contact" },
+    { name: "Careers", to: "/career" },
   ];
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (navbarRef.current && !navbarRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+
+    if (isOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isOpen]);
 
   return (
     <nav className="fixed w-full bg-white/90 backdrop-blur-sm z-50 border-b border-gray-200">
@@ -33,7 +52,11 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 to={link.to}
-                className="text-gray-400 font-semibold  hover:-translate-y-0.5 duration-300 hover:text-primary transition"
+                className={`${
+                  location.pathname === link.to
+                    ? "text-primary font-semibold"
+                    : "text-gray-400 font-semibold"
+                } hover:-translate-y-0.5 duration-300 hover:text-primary transition`}
               >
                 {link.name}
               </Link>
@@ -68,13 +91,17 @@ export default function Navbar() {
       </div>
 
       {isOpen && (
-        <div className="md:hidden border-t border-gray-200">
+        <div ref={navbarRef} className="md:hidden border-t border-gray-200">
           <div className="px-2 pt-2 pb-3 space-y-1 bg-white">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
                 to={link.to}
-                className="block px-3 py-2 text-gray-700 font-semibold  hover:-translate-y-0.5 duration-300 hover:text-primary transition"
+                className={`${
+                  location.pathname === link.to
+                    ? "text-primary font-semibold"
+                    : "text-gray-700 font-semibold"
+                } block px-3 py-2 hover:-translate-y-0.5 duration-300 hover:text-black transition`}
               >
                 {link.name}
               </Link>

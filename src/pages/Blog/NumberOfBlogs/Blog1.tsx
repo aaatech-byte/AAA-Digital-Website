@@ -40,7 +40,7 @@ const Blog1 = () => {
 
   return (
     <>
-      <main className="max-w-7xl m-auto pt-24 pb-10">
+      <main className="max-w-4xl m-auto pt-24 pb-10">
         <div className="flex justify-between items-center">
           {/* <span className="bg-primary text-white font-bold text-sm px-3 py-2 cursor-pointer shadow-md hover:shadow-lg rounded-2xl ">{post.category}</span> */}
           {/* <p className="text-primary font-bold text-xl cursor-pointer rounded-2xl ">

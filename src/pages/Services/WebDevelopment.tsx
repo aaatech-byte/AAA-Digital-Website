@@ -52,24 +52,9 @@ const process = [
   }
 ];
 
-// const projects = [
-//   {
-//     title: 'E-Commerce Platform',
-//     description: 'Custom B2B marketplace with advanced filtering and real-time inventory',
-//     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80',
-//     technologies: ['React', 'Node.js', 'MongoDB']
-//   },
-//   {
-//     title: 'Healthcare Portal',
-//     description: 'HIPAA-compliant patient management system with telemedicine features',
-//     image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80',
-//     technologies: ['Vue.js', 'Python', 'PostgreSQL']
-//   }
-// ];
-
 export default function WebDevelopment() {
   return (
-    <main>
+    <main >
       <div className="bg-[url('https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]
       relative h-[94vh] bg-cover bg-center pt-20 ">
         <div className="absolute bg-[#434343] z-10 w-[100%] h-[88%] opacity-80"></div>

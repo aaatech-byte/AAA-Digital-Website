@@ -8,6 +8,7 @@ import HomePage from "./pages/Home/HomePage";
 import About from "./pages/About/AboutPage";
 import OurWork from "./pages/Portfolio/OurWork";
 import ContactForm from "./pages/Contact/ContactPage";
+import Career from "./pages/Carrers/Career";
 
 import ServicesPage from "./pages/Services/ServicesPage";
 import WebDevelopment from "./pages/Services/WebDevelopment";
@@ -65,6 +66,7 @@ function App() {
           <Route path="/work" element={<OurWork />} />
           <Route path="/contact" element={<ContactForm />} />
           <Route path="/services" element={<ServicesPage />} />
+          <Route path="/career" element={<Career />} />
 
           <Route path="/blog" element={<Blog />} />
           {/* <Route path="/blog/app-dev" element={<AppBlog />} />
